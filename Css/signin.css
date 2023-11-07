@@ -1,0 +1,115 @@
+.sbody {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f2f2f2;
+}
+.ss{
+    height: 60px;
+    display: flex;
+    align-items: center;
+  
+}
+.sbody .ull .activex{
+    color: violet;
+}
+.sbody .ull li a:hover{
+    color: violet;
+}
+
+.sbody .logo{
+    color: wheat;
+}
+.sbody header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 200;
+    background: var(--bg-color);
+    box-shadow: 0 1px 4px hsl(0 4% 14% / 10%);
+    transition: .5s;
+}
+
+.ss a{
+    color: #721c24;
+}
+.sbody .activex{
+    background-color: #721c24;
+    color: white;
+}
+.sbody .signup-container a{
+    height: 30px;
+    margin: 10px;
+    cursor: pointer;
+}
+.signup-container {
+    margin-top: 100px;
+    width: 80%;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sbody form {
+    display: flex;
+    flex-direction: column;
+}
+
+.sbody label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.sbody input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.sbody .success-msg,
+.sbody.error-msg {
+    display: none;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.sbody .success-msg {
+    background-color: #d1f3cd;
+    color: #2b542c;
+}
+
+.sbody .error-msg {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.sbody #submitBtn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sbody #submitBtn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .signup-container {
+        width: 90%;
+    }
+}

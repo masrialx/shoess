@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shoes E-Commerce Site</title>
+  <link rel="stylesheet" href="Css/product.css">
+  <link rel="stylesheet" href="Css/cart.css">
+  <link rel="stylesheet" href="Css/home.css">
+  <link rel="stylesheet" href="Css/main.css">
+
+<style>
+    .picsx{
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+      background-image: url('Img/bg with shoe edited in photoshop.png');
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+</head>
+
+<body>
+    <head class="headx">
+        <div class="navbar">
+           <div class="nav">
+               <div class="navs">
+                <div class="logo"><a href="home.html"><img src="image/llo.jpg" alt=""></a></div>
+                   <div class="list">
+                       <ul>
+                           <li><a href="home.html">Home</a></li>
+                           <li><a href="product.html">Product</a></li>
+                           <li><a href="contact.html">Contact</a></li>
+                           <li><a href="#footer">About Us</a></li>
+                       </ul>
+                    
+                   </div>
+                   <div class="btns">
+                    <div class="btn">
+                      <a href="signin.html">  <button class="login">Sign in</button></a>
+                      <a href="signup.html"> <button class="signup">Sign up</button></a>
+                    </div>
+                    
+                     <div class="bug">
+                       <span  class="notf totalProducts">0</span>
+                      <img class=" fa fa-shopping-cart" src="Img/shopping bag.svg" alt="cart" class="cart" id="listt">
+                       </div>
+                 
+                      </div>
+                      <div class="svgs">
+                       <img src="Img/list-bullet-svgrepo-com.svg" alt="" id="lists" class="lists">
+                       <!-- <img src="Img/cancel-svgrepo-com (1).svg" alt="" id="cancel" class="cancel">  -->
+                   </div>
+               </div>
+           
+           </div>
+         
+        </div>
+     <div class="picsx" >
+  <div class="picsxx">
+    <div class="txt">
+      <div class="top">
+       <span><span class="aa">
+          Comfort awaits
+       </span><span class="bb">
+          everyday
+       </span></span>
+      </div>
+      <div class="midx">
+       <span>
+          Production and sale of the best shoe of various types for
+tour travel lovers. Feel the tightness and comfort of these items.
+       </span>
+      </div>
+      <div class="last">
+        <button>Order Now</button>
+      </div>
+
+      
+  </div>
+  </div>
+
+      </div>
+  </head> 
+  
+
+
+
+  <div class="order">
+    <div class="orders">
+      <div class="order1">
+       <span class="tx">
+        Brand
+       </span>
+       <span class="dd">
+        Over 10+ models available for sale
+       </span>
+      </div>
+      <div class="order1">
+        <span class="tx">
+          Quality
+         </span>
+         <span class="dd">
+          Variety of colors on display, choose to your taste             </span>
+      </div>
+      <div class="order1">
+        <span class="tx">
+          Price
+         </span>
+         <span class="dd">
+          All products are affordable, buy and get 20% discount             </span>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="ser">
+    <section class="user-input">
+      <h2>Search Products</h2>
+      <form>
+       
+        <div class="buttons">
+        <div class="btnnx">
+          <button onclick="filterProducts('all')">All</button>
+          <button onclick="filterProducts('men')">Male</button>
+          <button onclick="filterProducts('women')">Women</button>
+         
+        </div> 
+        
+        </div>
+    </section>
+  </div>
+
+  
+    <main>
+    <div class="container">
+      <!-- <section class="product">
+        <h2>Products</h2>
+        <div id="productsContainer">
+
+        </div>
+      </section> -->
+  
+      <div class="dashboard-container" id="productsContainer">
+        <!-- Product items will be added dynamically using JavaScript -->
+      </div>
+    
+      <!-- Product detail modal -->
+      <div class="modal" id="productModal">
+        <div class="modal-content">
+          <span class="modal-close" onclick="hideModal()">&times;</span>
+          <img src="" alt="Product Image" id="modalProductImage">
+          <h2 id="modalProductName"></h2>
+          <p id="modalProductPrice"></p>
+          <p id="modalProductCategory"></p>
+          <p id="modalProductShoesNum"></p>
+          <button onclick="addToCart()">Add to Cart</button>
+        </div>
+      </div>
+
+
+      <section class="cart" id="cartSection">
+        <img src="Img/cancel-svgrepo-com (1).svg" id="iox" alt="" class="io">
+        <h2 class="my">My Cart</h2>
+        <div class="cart-table">
+          <table>
+            <thead>
+              <tr>
+                <th>Product Image</th>
+                <th>Product Name</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Item Total</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="cartContainer">
+
+            </tbody>
+          </table>
+        </div>
+<div class="totals">
+  <div class="totall">
+<div class="pp">
+  <p class="tt">Total: $<span id="total">0.00</span></p>
+  <p>Total Quantity: <span class="notf quantity">0</span></p>
+
+</div>
+    <button class="buys">Buy Now</button>
+  </div>
+</div>
+      </section>
+
+   
+    </div>
+  </div>
+
+  </main>
+
+
+
+  
+     
+   
+    
+     
+           
+       </div>
+
+
+
+       <footer id="footer">
+        <h2 class="nms">Name: Masresha Alemu    Id:UU85605R</h2>
+        <div class="footerLeft">
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">About Us</h1>
+                <ul class="fList">
+                    <li class="fListItem">Company</li>
+                    <li class="fListItem">Contact</li>
+                    <li class="fListItem">Careers</li>
+                    <li class="fListItem">Affiliates</li>
+                    <li class="fListItem">Stores</li>
+                </ul>
+            </div>
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Useful Links</h1>
+                <ul class="fList">
+                    <li class="fListItem">Support</li>
+                    <li class="fListItem">Refund</li>
+                    <li class="fListItem">FAQ</li>
+                    <li class="fListItem">Feedback</li>
+                    <li class="fListItem">Stories</li>
+                </ul>
+            </div>
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Products</h1>
+                <ul class="fList">
+                    <li class="fListItem">Air Force</li>
+                    <li class="fListItem">Air Jordan</li>
+                    <li class="fListItem">Blazer</li>
+                    <li class="fListItem">Crater</li>
+                    <li class="fListItem">Hippie</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerRight">
+            <div class="footerRightMenu">
+                <h1 class="fMenuTitle">Subscribe to our newsletter</h1>
+                <div class="fMail">
+                    <input type="text" placeholder="your@email.com" class="fInput">
+                    <button class="fButton">Join!</button>
+                </div>
+            </div>
+            <div class="footerRightMenu">
+                <h1 class="fMenuTitle">Follow Us</h1>
+                <div class="fIcons">
+                    <img src="./img/facebook.png" alt="" class="fIcon">
+                    <img src="./img/twitter.png" alt="" class="fIcon">
+                    <img src="./img/instagram.png" alt="" class="fIcon">
+                    <img src="./img/whatsapp.png" alt="" class="fIcon">
+                </div>
+            </div>
+            <div class="footerRightMenu">
+                <span class="copyright">@Masri404. All rights reserved. 2023</span>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+       <script src="Js/home.js"></script>
+       <script src="Js/action.js"></script>
+       <script src="Js/product.js"></script>
+   
+  <!-- <script src="Js/cart.js"></sc
+    ript> -->
+</body>
+
+</html>

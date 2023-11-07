@@ -1,0 +1,341 @@
+*{
+    font-family: "Source Sans Pro", sans-serif;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+head{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.navbar{
+    width: 100%;
+    height: auto;
+    background-color:#F6F4ED;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.navbar .abs{
+    position: absolute;
+    height: 300px;
+    flex-shrink: 0;
+    width: 300px;
+    opacity: 0.1599999964237213;
+    background: #7B29DD;
+    filter: blur(60px);
+    border-radius: 790px;
+    left: 0;
+    top: 0;
+}
+/* ///////////////////////////////////////// */
+.svgs{
+    position: absolute;
+    visibility: hidden;
+    width: 50px;
+    height: 50px;
+}
+.svgs img{
+    /* visibility: visible; */
+    width: 50px;
+    height: 50px;
+}
+
+.nav1{
+    position: relative;
+    top: 20px;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 70px;
+    align-items: center;
+    background: linear-gradient(135deg, #7B29DD 0%, #FDC400 100%);
+   transition: 0.7s;
+}
+.nav1 .list ul li a{
+    color: white;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    transition: 0.5s;
+}
+.nav1 .list ul li a:hover{
+    color: rgb(17, 255, 0);
+    font-weight:600;
+}
+.nav1 .btn .login{
+    width: 70px;
+    transition: 0.7s;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    visibility: visible;
+}
+.nav1 .btn .login:hover{
+    background:  #FDC400;
+    color: black;
+}
+.nav1 .btn .signup{
+    width: 100px;
+    height: 30px;
+    color: #1E1E1E;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background:  #FDC400;
+    box-shadow: 0px 6px 12px 0px rgba(253, 196, 0, 0.16);
+    border: none;
+    transition: 0.7s;
+    cursor: pointer;
+}
+.nav1 .btn .signup:hover{
+    color: white;
+    background-color: transparent;
+   border: 1px solid white;
+}
+.nav1 .btns .notf{
+    position: absolute;
+    color: rgb(86, 5, 84);
+    right: 9.4%;
+    top: 12px;
+    font-weight: 600;
+}
+
+/* //////////////////////////////////////// */
+.nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: auto;
+    align-items: center;
+    transition: 0.7s;
+    height: auto;
+}
+.navs{
+    width: 80%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navs .list ul{
+    display: flex;
+}
+.navs .list ul li{
+    margin-left: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+/* Base styles for the main container */
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  /* Base styles for the item */
+  .item.rnd-abc1 {
+    flex: 1 0 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  /* Styles for the item image */
+  .item-image.rnd-abc2 {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Styles for the item title */
+  .item-title.rnd-abc3 {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  /* Styles for the item price */
+  .item-price.rnd-abc4 {
+    font-size: 14px;
+    color: #888;
+    margin-top: 5px;
+  }
+  
+  /* Styles for the "Add to Cart" button */
+  .add-to-cart-btn.rnd-abc5 {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-to-cart-btn.rnd-abc5:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Media queries for responsive design */
+  
+  /* Screen width 1000px and below */
+  @media (max-width: 1000px) {
+    .main {
+      justify-content: center;
+    }
+    .item.rnd-abc1 {
+      flex-basis: calc(33.33% - 20px); /* Adjust based on your preference */
+      margin: 5px;
+    }
+  }
+  
+  /* Screen width 600px and below */
+  @media (max-width: 600px) {
+    .item.rnd-abc1 {
+      flex-basis: calc(50% - 20px); /* Adjust based on your preference */
+      margin: 5px;
+    }
+  }
+  
+  /* Screen width 400px and below */
+  @media (max-width: 400px) {
+    .item.rnd-abc1 {
+      flex-basis: calc(100% - 20px); /* Adjust based on your preference */
+      margin: 5px;
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+/* .navs .list ul li div{
+    margin-top: 2px;
+    width: 35px;
+    height: 3px;
+   
+} */
+.navs .list ul li a:hover{
+    color: red;
+}
+.nav .list ul li div:hover{
+    background-color: red;
+}
+.nav .list ul li a{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #1E1E1E;
+    transition: 0.5s;
+}
+.nav1 .list ul li a:hover{
+    color: red;
+    font-weight:600;
+}
+.navs .btns{
+    display: flex;
+    align-items: center;
+    /* margin-left: 10px; */
+}
+.btn{
+    display: flex;
+    margin: 10px;
+}
+.btns button{
+    margin-left: 10px;
+}
+.btn .login{
+    transition: 0.7s;
+    cursor: pointer;
+    border: none;
+    color:  #1E1E1E;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    visibility: visible;
+}
+.btn .login:hover{
+    color: red;
+}
+.logo img{
+    width: 70px;
+    height: 40px;
+}
+.btn .signup{
+    width: 100px;
+    height: 30px;
+    color: #1E1E1E;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background:  #FDC400;
+    box-shadow: 0px 6px 12px 0px rgba(253, 196, 0, 0.16);
+    border: none;
+    transition: 0.7s;
+    cursor: pointer;
+}
+.btn .signup:hover{
+    background-color: transparent;
+   border: 1px solid black;
+}
+.btns .notf{
+    position: absolute;
+    color: red;
+    right: 9.4%;
+    top: 2%;
+    font-weight: 600;
+}
+.btns .bug{
+    cursor: pointer;
+    width: 30px;
+    height:30px;
+
+    border-radius: 50%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    transition: 0.7s;
+}
+.bug:hover{
+    background-color: #FDC400;
+}
+.login:hover{
+    color: brown;
+}
+
